@@ -1,0 +1,39 @@
+[debug] [2023-04-19T13:19:25.591Z] ----------------------------------------------------------------------
+[debug] [2023-04-19T13:19:25.594Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\EASY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-19T13:19:25.595Z] CLI Version:   11.28.0
+[debug] [2023-04-19T13:19:25.595Z] Platform:      win32
+[debug] [2023-04-19T13:19:25.595Z] Node Version:  v18.15.0
+[debug] [2023-04-19T13:19:25.596Z] Time:          Wed Apr 19 2023 18:49:25 GMT+0530 (India Standard Time)
+[debug] [2023-04-19T13:19:25.596Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-19T13:19:25.609Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-19T13:19:25.610Z] > authorizing via signed-in user (sidothapa@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\EASY\Desktop\React\Own React Practice\portfolio_website
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-04-19T13:20:54.818Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-04-19T13:20:54.819Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"n","name":"n"}
+[debug] [2023-04-19T13:20:56.388Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2023-04-19T13:20:56.388Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id must be at least 6 characters long"},{"field":"project_id","description":"project_id contains invalid characters"},{"field":"display_name","description":"project display name must be at least 4 characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2023-04-19T13:20:56.613Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (C:\Users\EASY\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\EASY\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
